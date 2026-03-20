@@ -1,8 +1,10 @@
+import HomeScreen from "../homeScreen";
+
 
 const Dashboard = () => {
     return (
         <div className="">
-            Dashboard
+            <HomeScreen />
         </div>
     )
 }
