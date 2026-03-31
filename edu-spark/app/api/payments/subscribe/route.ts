@@ -1,3 +1,7 @@
+/**
+ * Implment subscription plans using Paystack's recurring charge API
+ */
+
 import { NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
 import { authOptions } from "../../../../src/app/api/auth/[...nextauth]/route";
