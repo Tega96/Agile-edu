@@ -1,7 +1,0 @@
-export { default as LandingPage } from './LandingPage/LandingPage'
-export { default as ExamDashboard } from './ExamDashboard'
-export { default as Dashboard } from './Dashboard'
-export {default as Leaderboard } from './Leaderboard'
-export {default as LearningDashboard } from './LearningDashboard'
-export {default as Settings } from './Settings'
-export { default as UserProfile } from './UserProfile'
