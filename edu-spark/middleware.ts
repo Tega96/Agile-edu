@@ -11,5 +11,11 @@ export default withAuth(
                 return NextResponse.redirect(new URL("/dashboard", req.url));
             }
         }
+        return NextResponse.next();
+    },
+    {
+        callbacks: { authorized: ({ token }) => !!token }
     }
-)
+);
+
+export const config = { matcher: ["/dashboard/:path*", "/learn/:path*", "/exam/:path*", "/admin/:path*"] };
