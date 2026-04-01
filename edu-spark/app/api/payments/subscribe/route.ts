@@ -4,7 +4,7 @@
 
 import { NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
-import { authOptions } from "../../../../src/app/api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 import Paystack from "paystack-node";
 
 const paystack = new Paystack(process.env.PAYSTACK_SECRET_KEY);
